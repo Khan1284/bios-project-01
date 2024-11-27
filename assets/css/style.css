@@ -73,20 +73,24 @@ a {
 
 .nav ul {
     display: flex;
-    gap: 39px;
 }
 
 .nav a {
     color: #2f3a3b;
+    padding: 10px 20px;
 }
 
 .nav a:hover {
-    text-shadow: 1px 0 0 currentColor;
+    text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;
 }
 
 .header .action-link {
     color: #2f3a3b;
-    margin-right: 24px;
+    padding: 12px 23px;
+}
+
+.header .action-link:hover {
+    text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;
 }
 
 .header .action-btn {
@@ -95,4 +99,38 @@ a {
     border: 1px solid #1ebfc1;
     color: var(--primary-color);
     font-weight: 600;
+}
+
+.header .action-btn:hover {
+    color: #fff;
+    background-color: #1ebfc1;
+}
+
+/* Hero */
+.hero {
+    padding: 36px 0 79px;
+}
+
+.hero .body {
+    display: flex;
+    align-items: center;
+    height: 631px;
+}
+
+/* Hero left */
+.hero .content-block {
+    width: 51%;
+}
+
+.hero-summary .title {
+}
+/* Hero right */
+.hero .media-block {
+    width: 49%;
+}
+
+.media-block .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
